@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UN CORS'SAIN !</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <header>
+        <h1>UN CORS'SAIN !</h1>
+        <h2>Centres de remise en forme et de musculation</h2>    
+        <nav>
+            <ul>
+                <li><a href="/pages/accueil.html">Accueil</a></li>
+                <li><a href="/pages/centres.html">Centres</a></li>
+                <li><a href="/pages/installations.html">Installations</a></li>
+                <li><a href="/pages/cours.html">Cours</a></li>
+                <li><a href="/pages/nous_contacter.html">Nous contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="accueil">
+        <img src="/media/salle_de_sport.jpg" alt="Centre de remise en forme">
+        <br><br>
+        <h3>Les centres "Un cors'sain !" vous proposent des offres adaptées à vos besoins : du fitness, de la msuclation, du cardio training, des cours animés ou en vidéo et un accès 7/7 de 6h à 23h !</h3>
+        <a href="#offre_decouverte" class="btn">Rejoignez-nous</a>
+        <br>
+        <br>
+        <br>
+        <p></p>
+    </section>
+    <div id="offre_decouverte" class="offre_decouverte">
+        <h2>Offre Découverte - 1 Mois à <span class="ancien-prix">29,99€</span> <span class="nouveau-prix">19,99€*</span></h2>
+        <p>Profitez d'un accès illimité aux trois salles d'Ajaccio avec :</p>
+        <ul>
+            <li>✅ Une carte d'accès nominative</li>
+            <li>✅ Accès illimité à tous les espaces :</li>
+            <ul class="espaces">
+                <li>- Plateau de musculation libre</li>
+                <li>- Espace cardio</li>
+                <li>- Espace d'entraînements</li>
+                <li>- Espace de cours vidéo sur écran géant</li>
+                <li>- Espace de cours avec des entraîneurs sportifs diplômés d'État</li>
+            </ul>
+            <li>✅ Accès aux douches et casiers individuels</li>
+        </ul>
+    
+        <h3>📌 Pièces à fournir pour l'inscription :</h3>
+        <ul>
+            <li>📄 Photocopie de la carte d'identité</li>
+            <li>🏦 Un RIB</li>
+            <li>💳 Un chèque de garantie (75€ non encaissé)</li>
+        </ul>
+    
+        <p class="frais">💰 À l'inscription : versement du 1er mois + frais de dossier*<br>
+        <small>*Frais de dossier : 39€ (1 seule fois et valables à vie !)</small></p>
+    
+        <a href="/pdf/fiche_d-inscription.pdf" download class="btn">📥 Télécharger la fiche d'inscription</a>
+    </div>
+    <div class="newsletter">
+        <h2>📩 Inscrivez-vous à notre Newsletter</h2>
+        <p>Recevez les dernières actualités, offres spéciales et conseils fitness directement dans votre boîte mail.</p>
+        <form action="newsletter.php" method="POST">
+            <input type="email" name="email" placeholder="Entrez votre email" required>
+            <button type="submit" class="btn">S'inscrire</button>
+        </form>
+    </div>        
+</body>
+</html>

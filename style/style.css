@@ -1,0 +1,463 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+        html {
+            scroll-behavior: smooth;
+        }        
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #000;
+            color: white;
+        }
+        header {
+            text-align: center;
+            padding: 40px;
+            background: rgba(0, 0, 0, 0.0);
+            border-radius: 15px;
+            margin: 20px;
+        }
+        h1 {
+            font-size: 3.5em;
+            margin: 0;
+            color: #f9b233;
+        }
+        h2 {
+            font-size: 1.8em;
+            margin: 0;
+            color: #ddd;
+        }
+
+        h3 {
+            size: 50%;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 20px;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.3em;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background 0.3s, color 0.3s;
+        }
+        nav ul li a:hover {
+            background: #f9b233;
+            color: #1e1e2f;
+        }
+        .btn {
+            display: inline-block;
+            background: #f9b233;
+            color: #1e1e2f;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background 0.3s, transform 0.2s;
+        }
+        .btn:hover {
+            background: #e89a20;
+            transform: scale(1.05);
+        }
+        #accueil {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #accueil img {
+            width: 90%;
+            max-width: 1200px;
+            border-radius: 20px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+    
+    #nos_centres {
+        text-align: center;
+        margin-top: 20px;
+    }
+    #nos_centres img {
+        width: 50%;
+        max-width: 1200px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #nos_centres img:hover {
+
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    #nos_centres_details {
+        text-align: center;
+
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px; /* Espacement entre les images */
+        padding-bottom: 5%;
+    }
+    
+    .gallery img {
+        width: 100%; /* Pour avoir 3 images par ligne avec un espacement */
+        height: 250px; /* Hauteur fixe */
+        max-width: 450px; /* Limite la taille des images */
+        border-radius: 15px; /* Bords arrondis */
+        object-fit: cover; /* Ajuste les images pour remplir sans déformation */
+    }
+
+    
+    .gallery_coach {
+        display: flex;
+        justify-content: center;
+        gap: 20px; /* Espacement entre les coachs */
+    }
+    
+    .coach {
+        display: flex;
+        flex-direction: column; /* Place l'image au-dessus du texte */
+        align-items: center; /* Centre le texte sous l'image */
+        text-align: center;
+    }
+    
+    .coach img {
+        width: 100%; /* Pour avoir 3 images par ligne avec un espacement */
+        height: 450px; /* Hauteur fixe */
+        max-width: 80%; /* Limite la taille des images */
+        margin: 2%;
+        border-radius: 15px; /* Bords arrondis */
+        object-fit: cover; /* Ajuste les images pour remplir sans déformation */
+    }
+    
+    .coach p {
+        margin-top: 10px;
+        font-size: 1.2em;
+        font-weight: bold;
+        color: #ddd; /* Couleur du texte */
+    }
+
+    .schedule-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    
+    .schedule-table {
+        width: 90%;
+        border-collapse: collapse;
+        text-align: center;
+        font-family: Arial, sans-serif;
+    }
+    
+    .schedule-table th, .schedule-table td {
+        border: 1px solid #ddd;
+        padding: 12px;
+        font-size: 16px;
+    }
+    
+    .schedule-table thead {
+        background-color: #222;
+        color: white;
+    }
+    
+    .video {
+        background-color: #f3f3f3;
+        color: #333;
+        font-weight: bold;
+    }
+    
+    .cardio {
+        background-color: #ff6b6b;
+        color: white;
+    }
+    
+    .zumba {
+        background-color: #ffb74d;
+        color: white;
+    }
+    
+    .yoga {
+        background-color: #64b5f6;
+        color: white;
+    }
+    
+    .step {
+        background-color: #81c784;
+        color: white;
+    }
+    
+    .cardio.zumba {
+        background: linear-gradient(to right, #ff6b6b, #ffb74d);
+        color: white;
+    }
+    
+    .yoga.step {
+        background: linear-gradient(to right, #64b5f6, #81c784);
+        color: white;
+    }
+
+    /* Style du formulaire */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contact-form {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    margin-top: 15px;
+    padding: 12px;
+    background: #f9b233;
+    color: #1e1e2f;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background: #0056b3;
+}
+
+/* Style du popup */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.popup:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-content {
+    background: grey;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    width: 80%;
+    max-width: 300px;
+}
+
+.popup-content p {
+    font-size: 18px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+
+
+.ancien-prix {
+    text-decoration: line-through;
+    color: red;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.nouveau-prix {
+    font-size: 28px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    margin: 5px 0;
+    color: #555;
+}
+
+.espaces {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #666;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 22px;
+}
+
+.frais {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+}
+/* Offres découverte et newsletter */
+.offre_decouverte, .newsletter {
+    width: 70%;
+    margin: 50px auto;
+    background: #111;
+    color: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.offre_decouverte h2, .newsletter h2 {
+    font-size: 26px;
+    color: #f9b233;
+}
+
+.offre_decouverte p, .newsletter p {
+    font-size: 18px;
+    color: #ddd;
+}
+
+.offre_decouverte .btn, .newsletter .btn {
+    background: #f9b233;
+    color: #1e1e2f;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.offre_decouverte .btn:hover, .newsletter .btn:hover {
+    background: #e89a20;
+    transform: scale(1.05);
+}
+
+/* Popup pour la newsletter */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.popup:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.popup-content {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    width: 80%;
+    max-width: 300px;
+}
+
+.popup-content h3 {
+    font-size: 20px;
+    color: #f9b233;
+}
+
+.popup-content input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: #f9b233;
+    color: #1e1e2f;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.popup-content button:hover {
+    background: #e89a20;
+}
+
+.popup-content .close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #f9b233;
+}
+
+.popup-content .close:hover {
+    color: white;
+}

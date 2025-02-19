@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UN CORS'SAIN !</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <header>
+        <h1>UN CORS'SAIN !</h1>
+        <h2>Centres de remise en forme et de musculation</h2>    
+        <nav>
+            <ul>
+                <li><a href="/pages/accueil.html">Accueil</a></li>
+                <li><a href="/pages/centres.html">Centres</a></li>
+                <li><a href="/pages/installations.html">Installations</a></li>
+                <li><a href="/pages/cours.html">Cours</a></li>
+                <li><a href="/pages/nous_contacter.html">Nous contacter</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="nous_contacter">
+        <div class="contact-container">
+            <form action="#popup" class="contact-form">
+                <label for="nom">Nom</label>
+                <input type="text" id="nom" name="nom" required>
+        
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="prenom" required>
+        
+                <label for="telephone">Numéro de téléphone</label>
+                <input type="tel" id="telephone" name="telephone" required>
+        
+                <label for="objet">Objet</label>
+                <input type="text" id="objet" name="objet" required>
+        
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+        
+                <button type="submit">Envoyer</button>
+            </form>
+        </div>
+        
+        <!-- Popup de confirmation -->
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <a href="#" class="close">&times;</a>
+                <p>Nous reviendrons vers vous dans les plus brefs délais.</p>
+            </div>
+        </div>
+        
+    </section>
+</body>
+</html>
