@@ -1,0 +1,138 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f6f8fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.mail-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Barre latérale (Gauche) */
+.sidebar {
+    width: 25%;
+    background: #e3e7ed;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    color: #444;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 10px;
+    margin: 5px 0;
+    background: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sidebar li.active, .sidebar li:hover {
+    background: #cfd8dc;
+}
+
+/* Contenu du mail */
+.mail-content {
+    width: 75%;
+    padding: 40px;
+    border-left: 1px solid #ccc;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: #f9f9f9;
+    text-align: center;
+}
+
+.mail-content h2 {
+    color: #222;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.mail-content p {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.mail-content ul {
+    list-style: none;
+    padding: 0;
+    display: inline-block;
+    text-align: left;
+    margin: auto;
+}
+
+.mail-content .espaces li {
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+.promo {
+    color: #d32f2f;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.btn {
+    display: inline-block;
+    background: #f9b233;
+    color: #1e1e2f;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background: #e89a20;
+}
+
+/* Ajustement du bouton */
+.btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn-container a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 20px;
+    background: #f9b233;
+    color: #1e1e2f;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn-container a:hover {
+    background: #e89a20;
+}
+
+/* Ajout du lien vers l'accueil */
+.btn-container a[href="accueil.html"] {
+    display: inline-block;
+}
