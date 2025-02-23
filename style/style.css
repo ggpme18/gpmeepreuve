@@ -1,7 +1,7 @@
 
         
         
-                /* Définition des couleurs principales */
+        /* Définition des couleurs principales */
         :root {
             --background-color: #121212;
             --text-color: white;
@@ -12,6 +12,7 @@
             --border-color: #444;
             --light-text: #ddd;
             --popup-background: #222;
+
         }@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
 
         html {
@@ -112,43 +113,115 @@ nav ul li a:hover {
             box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
         }
 
+        #texte_acceuil {
+            align-items: center;
+            width: 70%;
+            padding-left: 15%;
+            display: flex;
+        }
+
     
-    #nos_centres {
-        text-align: center;
-        margin-top: 20px;
-    }
-    #nos_centres img {
-        width: 50%;
-        max-width: 1200px;
-        border-radius: 20px;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    }
+ /* Section des centres */
+#nos_centres {
+    text-align: center;
+    margin-top: 20px;
+}
 
-    #nos_centres img:hover {
+#nos_centres img {
+    width: 50%;
+    max-width: 1200px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
 
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    }
+#nos_centres img:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
 
-    #nos_centres_details {
-        text-align: center;
+/* Section détails des centres */
+#nos_centres_details {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
 
-    }
+.centre {
+    background: var(--header-background);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 250px;
+}
 
-    .gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px; /* Espacement entre les images */
-        padding-bottom: 5%;
-    }
-    
-    .gallery img {
-        width: 100%; /* Pour avoir 3 images par ligne avec un espacement */
-        height: 250px; /* Hauteur fixe */
-        max-width: 450px; /* Limite la taille des images */
-        border-radius: 15px; /* Bords arrondis */
-        object-fit: cover; /* Ajuste les images pour remplir sans déformation */
-    }
+.centre h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: white;
+}
+
+.centre p {
+    font-size: 16px;
+    color: white;
+}
+
+
+.carousel {
+    position: relative;
+    width: 80%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    max-width: 900px;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-track {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-track img {
+    display: none;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.carousel-track img.active {
+    display: block;
+}
+
+/* Boutons de navigation photos */
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 24px;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
 
     
     .gallery_coach {
@@ -280,22 +353,26 @@ nav ul li a:hover {
     resize: none;
 }
 
-.contact-form button {
-    margin-top: 15px;
+.contact-form a.btn {
+    display: block;
+    width: 100%;
+    text-align: center;
     padding: 12px;
+    margin-top: 15px;
     background: var(--primary-color);
     color: var(--secondary-color);
     font-size: 18px;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; /* Même arrondi que les inputs */
     cursor: pointer;
     transition: 0.3s;
 }
 
-.contact-form button:hover {
+.contact-form a.btn:hover {
     background: var(--hover-color);
     transform: scale(1.05);
 }
+
 
 /* Popup */
 .popup {
@@ -399,27 +476,37 @@ h3 {
 
 .offre_decouverte h2, .newsletter h2 {
     font-size: 28px;
-    color: var(--primary-color);
+    color: white;
 }
 
 .offre_decouverte p, .newsletter p {
     font-size: 18px;
-    color: var(--light-text);
+    color: white;
 }
+
 
 .offre_decouverte .btn, .newsletter .btn {
     background: #f9b233;
     color: #1e1e2f;
-    padding: 15px 30px;
+    padding: 12px 20px;
     border-radius: 25px;
     font-size: 1.2em;
     text-decoration: none;
     transition: background 0.3s, transform 0.2s;
 }
 
+.newsletter input {
+    border-radius: 25px;
+    font-size: 1.2em;
+}
+
 .offre_decouverte .btn:hover, .newsletter .btn:hover {
     background: #e89a20;
     transform: scale(1.05);
+}
+
+.offre_decouverte ul li {
+    color: white;
 }
 
 .espaces {
@@ -431,7 +518,7 @@ h3 {
 
 .espaces li {
     display: inline-block;
-    text-align: start;
+    text-align: center;
     width: 100%;
     max-width: 500px;
 }
@@ -575,4 +662,83 @@ footer {
     color: #aaa;
     border-top: 1px solid #444;
     padding-top: 10px;
+}
+
+/* Ofre découverte Lucas */
+
+.offre_decouverte_lucas {
+    width: 70%;
+    margin: 50px auto;
+    background: var(--header-background);
+    color: var(--text-color);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.offre_decouverte_lucas h2 {
+    font-size: 28px;
+    color: white;
+}
+
+.offre_decouverte_lucas p{
+    font-size: 18px;
+    color: white;
+}
+
+
+.offre_decouverte_lucas ul li {
+    color: white;
+}
+
+.offre_decouverte_lucas img {
+    width: 30%;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Ofre découverte Lucas */
+
+.offre_decouverte_lucass {
+    width: 70%;
+    margin: 50px auto;
+    background: #f9b233;
+    color: #1e1e2f;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.offre_decouverte_lucass h2 {
+    font-size: 28px;
+    color: #1e1e2f;
+}
+
+.offre_decouverte_lucass p {
+    font-size: 18px;
+    color: #1e1e2f;
+}
+
+
+.offre_decouverte_lucass ul li {
+    color: #1e1e2f;
+}
+
+.offre_decouverte_lucass .btn {
+
+    background: var(--header-background);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+
+.offre_decouverte_lucass .btn:hover {
+    background: #e89a20;
+    transform: scale(1.05);
 }

@@ -136,3 +136,45 @@ body {
 .btn-container a[href="accueil.html"] {
     display: inline-block;
 }
+
+/* Conseils de l'entraîneur */
+.trainer-advice {
+    margin-top: 30px;
+    padding: 20px;
+    background: #e3e7ed;
+    border-radius: 10px;
+    text-align: left;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.trainer-advice h3 {
+    color: #333;
+    text-align: center;
+}
+
+.trainer-advice ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.trainer-advice li {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #444;
+}
+
+.trainer-photo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.trainer-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
