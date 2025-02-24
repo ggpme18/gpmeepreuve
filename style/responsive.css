@@ -1,0 +1,83 @@
+/* 📱 Responsive Design pour Mobile & Tablette */
+@media screen and (max-width: 768px) {
+
+    /* 📌 Ajuster les titres */
+    h1 {
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    /* 📌 Ajuster les sections */
+    section, .offre_decouverte, .newsletter, .contact-form {
+        width: 90%;
+        padding: 15px;
+        margin: auto;
+    }
+
+    /* 📌 Menu Burger */
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        color: white;
+        padding: 10px;
+        text-align: right;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background: var(--header-background);
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        z-index: 1000;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    /* 📷 Images adaptables */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* 🆙 Ajuster les boutons */
+    .btn {
+        width: 100%;
+        padding: 12px;
+        font-size: 1em;
+        display: block;
+        text-align: center;
+    }
+
+    /* 📝 Formulaires responsives */
+    .contact-form {
+        max-width: 100%;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        width: 100%;
+        font-size: 1em;
+    }
+
+    /* 📌 Footer en colonne */
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social img {
+        width: 25px;
+    }
+}

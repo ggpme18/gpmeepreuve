@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nous contacter</title>
     <link rel="stylesheet" href="/style/style.css">
+    <link rel="stylesheet" href="/style/responsive.css" media="screen and (max-width: 768px)">
 </head>
 <body>
     <header>
@@ -13,7 +14,7 @@
         <nav>
             <ul>
                 <li><a href="/pages/accueil.html">Accueil</a></li>
-                <li><a href="/pages/centres.html">Centres</a></li>
+                <li><a href="/pages/centres.html">Nos centres</a></li>
                 <li><a href="/pages/installations.html">Installations</a></li>
                 <li><a href="/pages/cours.html">Cours</a></li>
                 <li><a href="/pages/nous_contacter.html">Nous contacter</a></li>
@@ -21,23 +22,24 @@
         </nav>
     </header>
     <section id="nous_contacter">
+        <h3>Une question sur nos abonnements ou nos cours ? Remplissez le formulaire ci-dessous et notre équipe vous répondra au plus vite !</h3>
         <div class="contact-container">
             <form action="#popup" class="contact-form">
-                <label for="nom">Nom</label>
+                <label for="nom">Nom*</label>
                 <input type="text" id="nom" name="nom" required>
         
-                <label for="prenom">Prénom</label>
+                <label for="prenom">Prénom*</label>
                 <input type="text" id="prenom" name="prenom" required>
         
-                <label for="telephone">Numéro de téléphone</label>
+                <label for="telephone">Numéro de téléphone*</label>
                 <input type="tel" id="telephone" name="telephone" required>
         
-                <label for="objet">Objet</label>
+                <label for="objet">Objet*</label>
                 <input type="text" id="objet" name="objet" required>
         
-                <label for="message">Message</label>
+                <label for="message">Message*</label>
                 <textarea id="message" name="message" required></textarea>
-        
+                <p>*Champ obligatoire</p>
                 <a href="#popup" class="btn">Envoyer</a>
             </form>
         </div>
@@ -55,6 +57,12 @@
             <div class="footer-logo">
                 <h2>UN CORS'SAIN !</h2>
                 <p>Remise en forme & Musculation - Ajaccio</p>
+                <p>contact@uncorssain.com</p>
+                <p>04.20.00.00.00</p>
+                <br>
+                <p>Mentions légales</p>
+                <p>Conditions générales de vente</p>
+                <p>Politique de confidentialité</p>
             </div>
             <div class="footer-links">
                 <h3>Liens rapides</h3>
@@ -69,7 +77,8 @@
             <div class="footer-social">
                 <h3>Suivez-nous</h3>
                 <a href="#"><img src="/media/facebook.svg" alt="Facebook"></a>
-                <a href="#"><img src="/media/instagram.svg" alt="Linkedin"></a>
+                <a href="#"><img src="/media/linkedin.png" alt="Linkedin"></a>
+                <a href="#"><img src="/media/x.svg" alt="X"></a>
             </div>
         </div>
         <div class="footer-bottom">

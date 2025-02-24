@@ -6,12 +6,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
 }
 
 .mail-container {
     display: flex;
-    width: 80%;
+    width: 90%;
     max-width: 1200px;
     background: white;
     border-radius: 10px;
@@ -21,7 +22,7 @@ body {
 
 /* Barre latérale (Gauche) */
 .sidebar {
-    width: 25%;
+    width: 35%;
     background: #e3e7ed;
     padding: 20px;
     border-top-left-radius: 10px;
@@ -139,7 +140,7 @@ body {
 
 /* Conseils de l'entraîneur */
 .trainer-advice {
-    margin-top: 30px;
+    margin-top: 0px;
     padding: 20px;
     background: #e3e7ed;
     border-radius: 10px;
