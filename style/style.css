@@ -469,7 +469,7 @@ h3 {
     color: #333;
 }
 /* Offres découverte et newsletter */
-.offre_decouverte, .newsletter {
+.offre_decouverte, .newsletter, .temoignages {
     width: 70%;
     margin: 50px auto;
     background: var(--header-background);
@@ -480,12 +480,21 @@ h3 {
     text-align: center;
 }
 
+.temoignages {
+
+
+}
+
+.temoignages img {
+    width: 20%;
+}
+
 .offre_decouverte h2, .newsletter h2 {
     font-size: 28px;
     color: white;
 }
 
-.offre_decouverte p, .newsletter p {
+.offre_decouverte p, .newsletter p, .temoignages p {
     font-size: 18px;
     color: white;
 }
